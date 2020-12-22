@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/myiauchi-sup/graphql/graph/generated"
-	"github.com/myiauchi-sup/graphql/graph/model"
+	"github.com/miyauchi-sup/graphql/graph/generated"
+	"github.com/miyauchi-sup/graphql/graph/model"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
