@@ -1,4 +1,4 @@
-module github.com/myiauchi-sup/graphql
+module github.com/miyauchi-sup/graphql
 
 go 1.14
 
