@@ -13,8 +13,8 @@ import (
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
 	"github.com/miyauchi-sup/graphql/graph/model"
-	gqlparser "github.com/vektah/gqlparser/v2"
-	"github.com/vektah/gqlparser/v2/ast"
+	gqlparser "github.com/vektah/gqlparser"
+	"github.com/vektah/gqlparser/ast"
 )
 
 // region    ************************** generated!.gotpl **************************
