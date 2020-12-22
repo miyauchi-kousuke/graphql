@@ -6,7 +6,6 @@ package graph
 import (
 	"context"
 	"fmt"
-
 	"github.com/miyauchi-sup/graphql/graph/generated"
 	"github.com/miyauchi-sup/graphql/graph/model"
 )
@@ -120,10 +119,10 @@ func (r *queryResolver) Videogames(ctx context.Context, query model.VideogameQue
 }
 
 // Mutation returns generated.MutationResolver implementation.
-func (r *graphql.Resolver) Mutation() generated.MutationResolver { return &mutationResolver{r} }
+func (r Resolver) Mutation() generated.MutationResolver { return &mutationResolver{r} }
 
 // Query returns generated.QueryResolver implementation.
-func (r *graphql.Resolver) Query() generated.QueryResolver { return &queryResolver{r} }
+func (r Resolver) Query() generated.QueryResolver { return &queryResolver{r} }
 
-type mutationResolver struct{ *graphql.Resolver }
-type queryResolver struct{ *graphql.Resolver }
+type mutationResolver struct{ Resolver }
+type queryResolver struct{ Resolver }
